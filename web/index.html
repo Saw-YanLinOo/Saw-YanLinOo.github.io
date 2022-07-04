@@ -23,13 +23,13 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="kopwar_supplier_web">
+  <meta name="apple-mobile-web-app-title" content="kopwar_web">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>kopwar_supplier_web</title>
+  <title>kopwar_web</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
@@ -39,8 +39,95 @@
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
+<style>
+  div {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-family: ‘Arial Narrow’, sans-serif;
+    font-weight: 100;
+    font-size: 3.3em;
+    color: #000000;
+  }
+  
+  span {
+    position: relative;
+    top: 0.63em;  
+    display: inline-block;
+    text-transform: uppercase;  
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  
+  .let1 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.2s;
+  }
+  
+  .let2 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.3s;
+  }
+  
+  .let3 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.4s;
+  }
+  
+  .let4 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.5s;
+  
+  }
+  
+  .let5 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.6s;
+  }
+  
+  .let6 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.7s;
+  }
+  
+  .let7 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.8s;
+  }
+  
+  @keyframes drop {
+      10% {
+          opacity: 0.5;
+      }
+      20% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      80% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      90% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 0;
+          top: 6.94em
+      }
+  }
+  </style>
 <body>
-<div id="loading">
+<!-- <div id="loading">
   <style>
       body {
         inset: 0; overflow: hidden;
@@ -69,29 +156,41 @@
       }
       @keyframes breathe { from { transform: scale(1) } to { transform: scale(0.95)}}
       @keyframes zooooom { from { transform: scale(1) } to { transform: scale(10)}}
+
       </style>
   <img src="icons/kopwar.png" alt="Loading indicator..." />
+</div> -->
+<div>
+  <h1>
+    <span class="let1">K</span>  
+    <span class="let2">O</span>  
+    <span class="let3">P</span>  
+    <span class="let4">W</span>  
+    <span class="let5">A</span>  
+    <span class="let6">R</span>  
+    <!-- <span class="let7">g</span>   --->
+  </h1>
 </div>
   <script>
     window.addEventListener('load', function(ev) {
-      var loading = document.querySelector('#loading');
+      //var loading = document.querySelector('#loading');
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         }
       }).then(function(engineInitializer) {
-        loading.classList.add('main_done');
+        //loading.classList.add('main_done');
         return engineInitializer.initializeEngine();
       }).then(function(appRunner) {
-        loading.classList.add('init_done');
+        //loading.classList.add('init_done');
         return appRunner.runApp();
       }).then(function(app) {
         // Wait a few milliseconds so users can see the "zoooom" animation
         // before getting rid of the "loading" div.
-        window.setTimeout(function() {
-          loading.remove();
-        }, 200);
+        // window.setTimeout(function() {
+        //   loading.remove();
+        // }, 200);
       });
     });
   </script>
