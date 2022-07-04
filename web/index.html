@@ -160,7 +160,7 @@
       </style>
   <img src="icons/kopwar.png" alt="Loading indicator..." />
 </div> -->
-<div>
+<div id="loading">
   <h1>
     <span class="let1">K</span>  
     <span class="let2">O</span>  
@@ -168,12 +168,11 @@
     <span class="let4">W</span>  
     <span class="let5">A</span>  
     <span class="let6">R</span>  
-    <!-- <span class="let7">g</span>   --->
   </h1>
 </div>
   <script>
     window.addEventListener('load', function(ev) {
-      //var loading = document.querySelector('#loading');
+      var loading = document.querySelector('#loading');
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
@@ -188,9 +187,9 @@
       }).then(function(app) {
         // Wait a few milliseconds so users can see the "zoooom" animation
         // before getting rid of the "loading" div.
-        // window.setTimeout(function() {
-        //   loading.remove();
-        // }, 200);
+        window.setTimeout(function() {
+          loading.remove();
+        }, 200);
       });
     });
   </script>
