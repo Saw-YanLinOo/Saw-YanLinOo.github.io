@@ -1,10 +1,13 @@
 # flutter_web_deploy
 
-A new Flutter project.
+Testing flutter web with CI/CD pipeline
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a testing for flutter web to be responsive and adative. Deploy on github page with github action. In flutter web, load stating page need to wait. While lading flutter module, show initial animation css. You can check this https://yanyanucstt.github.io/#/
+
+
+
 
 A few resources to get you started if this is your first Flutter project:
 
