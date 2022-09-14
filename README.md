@@ -4,7 +4,7 @@ Testing flutter web with CI/CD pipeline
 
 ## Getting Started
 
-This project is a testing for flutter web to be responsive and adative. Deploy on github page with github action. In flutter web, load stating page need to wait. While lading flutter module, show initial animation css. You can check this https://yanyanucstt.github.io/#/
+This project is a testing for flutter web to be responsive and adative. Deploy on github page with github action. In flutter web, load stating page need to wait. While lading flutter module, show initial animation css. You can check this https://saw-yanlinoo.github.io/#/
 
 
 
